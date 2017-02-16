@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         displayPrice(numberOfCups * 5);
     }
     public void decrementQ(View view){
-        numberOfCups = 3;
+        numberOfCups = 1;
         display(numberOfCups);
         displayPrice(numberOfCups * 5);
     }
