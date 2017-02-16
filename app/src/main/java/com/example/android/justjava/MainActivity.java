@@ -9,7 +9,7 @@ package com.example.android.justjava;
 import android.support.v7.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -26,15 +26,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    int numberOfCups;
     /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int numberOfCups = 2;
+        numberOfCups = 2;
         display(numberOfCups);
         displayPrice(numberOfCups * 5);
     }
 
+    public void incrementQ(){
+        numberOfCups = 3;
+        display(numberOfCups);
+        displayPrice(numberOfCups * 5);
+    }
+    public void decrementQ(){
+        numberOfCups = 3;
+        display(numberOfCups);
+        displayPrice(numberOfCups * 5);
+    }
     /**
      * This method displays the given quantity value on the screen.
      */
