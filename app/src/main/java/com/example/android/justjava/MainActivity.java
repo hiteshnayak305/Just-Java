@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
         displayPrice(numberOfCups * 5);
     }
 
-    public void incrementQ(){
+    public void incrementQ(View view){
         numberOfCups = 3;
         display(numberOfCups);
         displayPrice(numberOfCups * 5);
     }
-    public void decrementQ(){
+    public void decrementQ(View view){
         numberOfCups = 3;
         display(numberOfCups);
         displayPrice(numberOfCups * 5);
