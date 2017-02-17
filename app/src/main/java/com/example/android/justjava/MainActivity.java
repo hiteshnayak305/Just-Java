@@ -9,7 +9,7 @@ package com.example.android.justjava;
 import android.support.v7.app.AppCompatActivity;
 
 import android.os.Bundle;
-//import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -26,25 +26,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    int numberOfCups;
+    int numberOfCups = 2;
     /**
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        numberOfCups = 2;
         display(numberOfCups);
         displayPrice(numberOfCups * 5);
     }
 
     public void incrementQ(View view){
-        numberOfCups = 3;
+        numberOfCups++;
         display(numberOfCups);
-        displayPrice(numberOfCups * 5);
     }
     public void decrementQ(View view){
-        numberOfCups = 1;
+        numberOfCups--;
         display(numberOfCups);
-        displayPrice(numberOfCups * 5);
     }
     /**
      * This method displays the given quantity value on the screen.
@@ -59,6 +56,6 @@ public class MainActivity extends AppCompatActivity {
      */
     private void displayPrice(int number) {
         TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
+        priceTextView.setText("Price: " + NumberFormat.getCurrencyInstance().format(number) + "\nThank you!");
     }
 }
