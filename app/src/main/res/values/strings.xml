@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Just Java</string>
+
+    <!-- custom strings -->
+    <string name="Name">Name</string>
+    <string name="Quantity">Quantity</string>
+    <string name="Price">Price</string>
+    <string name="Order">Order</string>
 </resources>

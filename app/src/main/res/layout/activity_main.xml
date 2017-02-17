@@ -11,12 +11,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.justjava.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Quantity"
-        android:textAllCaps="true" />
+        android:hint="@string/Name"/>
+    <TextView
+        style="@style/headingStyle"
+        android:text="@string/Quantity" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -25,47 +26,31 @@
 
         <Button
             android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:onClick="incrementQ"
+            style="@style/buttonStyle"
             android:text="+" />
 
         <TextView
+            style="@style/text"
             android:id="@+id/quantity_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:text="2"
-            android:textColor="@android:color/black"
-            android:textSize="16dp" />
+            android:text="2" />
 
         <Button
             android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:onClick="decrementQ"
-            android:text="-" />
+            style="@style/buttonStyle"
+            android:text="-"/>
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Price"
-        android:textAllCaps="true" />
+        style="@style/headingStyle"
+        android:text="@string/Price"/>
 
     <TextView
+        style="@style/text"
         android:id="@+id/price_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="$ 10"
-        android:textColor="@android:color/black"
-        android:textSize="16dp" />
+        android:text="$ 10"/>
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:onClick="submitOrder"
-        android:text="Order" />
+        style="@style/buttonStyle"
+        android:text="@string/Order" />
 </LinearLayout>
