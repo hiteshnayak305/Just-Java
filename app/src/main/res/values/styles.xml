@@ -25,6 +25,10 @@
         <item name="android:textSize">16dp</item>
     </style>
 
+    <style name="textField">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
     <style name="buttonStyle">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAllCaps">true</item>

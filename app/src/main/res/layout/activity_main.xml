@@ -12,8 +12,8 @@
     tools:context="com.example.android.justjava.MainActivity">
 
     <EditText
+        style="@style/textField"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="@string/Name"/>
     <TextView
         style="@style/headingStyle"
