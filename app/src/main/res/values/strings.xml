@@ -9,4 +9,6 @@
     <string name="Toppings">Toppings</string>
     <string name="whipped_cream">Whipped Cream</string>
     <string name="chocolate">Chocolate</string>
+    <string name="increase">+</string>
+    <string name="decrease">-</string>
 </resources>

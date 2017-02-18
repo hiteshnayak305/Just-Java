@@ -12,6 +12,7 @@
     tools:context="com.example.android.justjava.MainActivity">
 
     <EditText
+        android:id="@+id/name_edit_text"
         style="@style/textField"
         android:layout_width="match_parent"
         android:hint="@string/Name"
@@ -19,18 +20,24 @@
 
     <TextView
         style="@style/headingStyle"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:text="@string/Toppings" />
 
     <CheckBox
+        android:id="@+id/whipped_cream_check"
         style="@style/checkBox"
         android:text="@string/whipped_cream" />
 
     <CheckBox
+        android:id="@+id/chocolate_check"
         style="@style/checkBox"
         android:text="@string/chocolate" />
 
     <TextView
         style="@style/headingStyle"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:text="@string/Quantity" />
 
     <LinearLayout
@@ -39,23 +46,29 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/increment_button"
             style="@style/buttonStyle"
             android:layout_width="48dp"
-            android:text="+" />
+            android:text="@string/increase" />
 
         <TextView
             android:id="@+id/quantity_text_view"
             style="@style/text"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:text="2" />
 
         <Button
+            android:id="@+id/decrement_button"
             style="@style/buttonStyle"
             android:layout_width="48dp"
-            android:text="-" />
+            android:text="@string/decrease" />
     </LinearLayout>
 
     <TextView
         style="@style/headingStyle"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
         android:text="@string/Price" />
 
     <TextView
@@ -64,7 +77,9 @@
         android:text="$ 10" />
 
     <Button
+        android:id="@+id/order_button"
         style="@style/buttonStyle"
         android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/Order" />
 </LinearLayout>
