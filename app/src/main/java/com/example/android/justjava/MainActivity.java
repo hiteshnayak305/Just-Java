@@ -1,23 +1,14 @@
-/**
- * Add your package below. Package name can be found in the project's AndroidManifest.xml file.
- * This is the package name our example uses:
- * <p>
- * package com.example.android.justjava;
- */
 package com.example.android.justjava;
 
 import android.support.v7.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
-import java.text.NumberFormat;
+import static android.R.attr.name;
 
-/**
- * This app displays an order form to order coffee.
- */
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -26,36 +17,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    int numberOfCups = 2;
     /**
-     * This method is called when the order button is clicked.
+     * method to call on order button clicked
+     * @param view
      */
-    public void submitOrder(View view) {
-        display(numberOfCups);
-        displayPrice(numberOfCups * 5);
-    }
-
-    public void incrementQ(View view){
-        numberOfCups++;
-        display(numberOfCups);
-    }
-    public void decrementQ(View view){
-        numberOfCups--;
-        display(numberOfCups);
+    public void orderItem(View view){
+        //get name
+        EditText name = (EditText)findViewById(R.id.name_edit_text);
+        String name_text = name.getText().toString();
+        //get quantity
+        TextView quantity
     }
     /**
-     * This method displays the given quantity value on the screen.
+     * display method to update quantity
+     * @param quantity
      */
-    private void display(int number) {
-        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        quantityTextView.setText("" + number);
-    }
-
-    /**
-     * This method displays the given price on the screen.
-     */
-    private void displayPrice(int number) {
-        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
-        priceTextView.setText("Price: " + NumberFormat.getCurrencyInstance().format(number) + "\nThank you!");
+    protected void displayQuantity(int quantity){
+        TextView quantity = (TextView)findViewById(R.id.quantity_text_view);
+        quantity.setText("" + quantity);
     }
 }

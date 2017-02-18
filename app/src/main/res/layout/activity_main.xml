@@ -13,6 +13,7 @@
 
     <EditText
         android:id="@+id/name_edit_text"
+        android:inputType="textCapWords"
         style="@style/textField"
         android:layout_width="match_parent"
         android:hint="@string/Name"
