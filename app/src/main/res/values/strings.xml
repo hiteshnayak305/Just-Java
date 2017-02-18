@@ -6,4 +6,7 @@
     <string name="Quantity">Quantity</string>
     <string name="Price">Price</string>
     <string name="Order">Order</string>
+    <string name="Toppings">Toppings</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
 </resources>
