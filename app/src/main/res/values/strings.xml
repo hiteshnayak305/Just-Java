@@ -4,7 +4,8 @@
     <!-- custom strings -->
     <string name="Name">Name</string>
     <string name="Quantity">Quantity</string>
-    <string name="Price">Price</string>
+    <string name="Summary">Price</string>
+    <string name="check_price">Check Price</string>
     <string name="Order">Order</string>
     <string name="Toppings">Toppings</string>
     <string name="whipped_cream">Whipped Cream</string>
