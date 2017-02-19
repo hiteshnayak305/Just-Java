@@ -94,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:text="@string/check_price"
                 android:onClick="checkPrice"
-                android:layout_marginEnd="16dp"/>
+                android:layout_marginRight="16dp"/>
             <Button
                 android:id="@+id/order_button"
                 style="@style/buttonStyle"
